@@ -265,6 +265,7 @@ namespace ConsoleApp1
            // if (Console.ReadLine() == "да")
             //{
             // yyyyyyyyy
+            //ujhuhuihuihyiuyh
                 Console.Clear();
                 Number = 0;
                 Four();
