@@ -264,6 +264,7 @@ namespace ConsoleApp1
            // Console.WriteLine("Случайная расстановка кораблей? ");
            // if (Console.ReadLine() == "да")
             //{
+            // yyyyyyyyy
                 Console.Clear();
                 Number = 0;
                 Four();
