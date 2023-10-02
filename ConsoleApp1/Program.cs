@@ -1,31 +1,40 @@
 ﻿using ConsoleApp1;
 using System.Collections;
+using System.Reflection.Emit;
+
 internal class Program
 {
     public static int[] array1;
     public static double[] doubleArray;
     private static void Main(string[] args)
     {
+
+
+        ShowTask2();   
         ProgramStart programStart = new ProgramStart();
         programStart.Start();
-        //Task1();
-        //CreateArray();
-        //ResetArrayToZero();
-        //FindElement();
+        Task1();
+        CreateArray();
+        ResetArrayToZero();
+        FindElement();
+    }
 
+    static void ShowTask2()
+    {
+        Console.WriteLine("jksdhvfkjesrhvg");
     }
     static void Task1()
     {
-        // объявление массива целых чисел, имеющих тип long
-        long[] M = new long[20]; // в массиве 20 элементов
+        ArrayList al = new ArrayList();
 
-        // записать в элементы массива произвольные значения
-        M[2] = 23990; // в элемент с индексом 2 записать число 23990
-        M[0] = 10000; // в элемент с индексом 0 записать число 10000
+        al.Add(5);
+        al.Add(-2);
+        al.Add(10);
+        al.Add(0);
+        al.Add(-8); // al = [5, -2, 10, 0, -8]
 
-        M[19] = -2039;
+        al.Sort();  // al = [-8, -2, 0, 5, 10]
 
-        M[20] = 1000; // ошибка! Индекс выходит за пределы диапазона
     }
     static void CreateArray()
     {
